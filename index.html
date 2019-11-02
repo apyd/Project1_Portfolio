@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel=stylesheet href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Project 1 - Portfolio (Coderscamp)</title>
 </head>
+
 <body>
-    
-    <script src="js/script.js"></script>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="#"><img class="logo" src="img/logo.svg"></a>
+            <ul class="nav__items">
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="entry-section">
+            <div class="entry-section__box">
+                <h1>Hello! 👋</h1>
+                <h3><span class="entry-section__text--highlight">I'm Artur, a product manager in FORTRUS.</span></h3>
+                <h3>In free time I learn about new front end technologies.</h3>
+                <h3>Welcome on my webpage. Make yourself at home.</h3>
+                <div class="entry-section__box--actions">
+                    <a href="#" class="entry-section__button">More about me</a>
+                    <div class="social__icons">
+                        <a href="#"><img class="social__icon" src="img/linkedin.svg"></a>
+                        <a href="#"><img class="social__icon" src="img/github.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="#about">
+        </section>
+        <section class="projects-section" id="projects"></section>
+        <section class="contact-section" id="contact"></section>
+    </main>
 </body>
+
 </html>

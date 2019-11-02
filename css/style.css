@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(32,30,80);
+    background: linear-gradient(130deg, rgba(32,30,80,1) 40%, rgba(113,47,102,1) 100%);
+    color: rgb(253, 253, 253);
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    box-sizing: padding-box;
+    height: 100%;
+    margin: 0px 100px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.nav__items {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav__item {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.nav__link { 
+    text-decoration: none;
+    color: rgb(253,253,253);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.nav__link:hover {
+    border-bottom: 2px rgb(253, 253, 253) solid;
+}
+
+.nav__logo {
+    display: flex;
+}
+
+.entry-section__text--highlight {
+    background-color: rgba(10, 9, 24, 0.624);
+    color: rgb(253, 253, 253);
+}
+
+.entry-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.entry-section__box--actions {
+    display: flex;
+    margin-top: 20px;
+}
+
+.entry-section__button {
+    display: inline-block;
+    background-color: rgba(10, 9, 24, 0.624);
+    border-bottom: 2px rgb(253, 253, 253) solid;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    padding-bottom: 1px;
+    align-self: center;
+    
+}
+
+.social__icons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+}
+
+.social__icon {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+}
+
+
