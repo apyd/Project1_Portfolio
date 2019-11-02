@@ -96,4 +96,8 @@ body {
     padding-right: 20px;
 }
 
-
+.knowledge__icon {
+    width: 54px;
+    height: 54px;
+    padding: 20px;
+}
