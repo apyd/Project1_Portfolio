@@ -1,17 +1,24 @@
 .html {
-    height: 100%;
+    --white-color: rgb(253,253,253);
+    --black-color: rgb(0,0,0);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .body {
     background: rgb(32,30,80);
     background: linear-gradient(130deg, rgba(32,30,80,1) 40%, rgba(113,47,102,1) 100%);
-    color: rgb(253, 253, 253);
+    color: var(--white-color);
     font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    box-sizing: padding-box;
-    height: 100%;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: padding-box;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -22,10 +29,15 @@
     margin: 0 120px;
 }
 
+.header {
+    max-width: 1600px;
+    display: flex;
+    margin: 0 auto;
+}
+
 .nav {
     display: flex;
     flex: 1;
-    align-items: center;
     margin: 0 150px;
 }
 
@@ -42,13 +54,13 @@
 
 .nav__link { 
     text-decoration: none;
-    color: rgb(253,253,253);
+    color: var(--white-color);
     font-weight: 700;
     padding-bottom: 5px;
 }
 
 .nav__link:hover {
-    border-bottom: 2px rgb(253, 253, 253) solid;
+    border-bottom: 2px var(--white-color) solid;
 }
 
 .nav__logo {
@@ -57,7 +69,7 @@
 
 .entry-section__text--highlight {
     background-color: rgba(10, 9, 24, 0.624);
-    color: rgb(253, 253, 253);
+    color: var(--white-color);
 }
 
 .entry-section {
@@ -76,8 +88,8 @@
 .entry-section__button {
     display: inline-block;
     background-color: rgba(10, 9, 24, 0.624);
-    border-bottom: 2px rgb(253, 253, 253) solid;
-    color: rgb(253, 253, 253);
+    border-bottom: 2px var(--white-color) solid;
+    color: var(--white-color);
     text-decoration: none;
     padding-bottom: 1px;
     align-self: center;
@@ -126,8 +138,8 @@
     top: .5rem;
     left: 50%;
     width: 100%;
-    opacity: 0;
     text-align: center;
+    opacity: 0;
 }
 
 .knowledge-section__icon:hover + .knowledge-section__text {
@@ -172,8 +184,8 @@
 
 .project__link {
     text-decoration: none;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white-color);
+    color: var(--black-color);
     padding: 10px;
 }
 
@@ -187,7 +199,7 @@
 
 .project__img {
     width: 100%;
-    border: 1px solid rgb(0,0,0);
+    border: 1px solid var(--black-color);
 }
 
 .contact__wrapper {
@@ -213,6 +225,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+}
+
+.form__button {
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
 
