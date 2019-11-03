@@ -7,25 +7,27 @@ body {
     background: linear-gradient(130deg, rgba(32,30,80,1) 40%, rgba(113,47,102,1) 100%);
     color: rgb(253, 253, 253);
     font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
     box-sizing: padding-box;
     height: 100%;
-    margin: 0px 100px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    height: 100%;
+    margin: 0 120px;
 }
 
 .nav {
     display: flex;
     flex: 1;
-    margin: 20px 0px;
     align-items: center;
+    margin: 0 150px;
 }
 
 .nav__items {
@@ -42,7 +44,7 @@ body {
 .nav__link { 
     text-decoration: none;
     color: rgb(253,253,253);
-    font-weight: bold;
+    font-weight: 700;
     padding-bottom: 5px;
 }
 
@@ -60,11 +62,11 @@ body {
 }
 
 .entry-section {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
 }
 
 .entry-section__box--actions {
@@ -96,8 +98,86 @@ body {
     padding-right: 20px;
 }
 
-.knowledge__icon {
-    width: 54px;
+.knowledge-section__icon {
     height: 54px;
-    padding: 20px;
+}
+
+.knowledge-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.knowledge-section__icon {
+    margin-top: 50px;
+    flex: 1;
+    margin: 50px 50px 0px 50px;
+}
+
+.projects-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+}
+
+.project__img {
+    height: 100%;
+}
+
+.project__link {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+.knowledge-section__box {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.knowledge-section__text{
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+}
+
+.knowledge-section__icon:hover + .knowledge-section__text {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+.experience-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experience-wrapper__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.experience-wrapper__text-box {
+    width: 50%;
 }

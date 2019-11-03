@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,12 +11,12 @@
     <title>Project 1 - Portfolio (Coderscamp)</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <nav class="nav">
-            <a class="nav__logo" href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
+            <a class="nav__logo" href="#main"><img class="logo" src="img/logo.svg" alt="logo"></a>
             <ul class="nav__items">
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#knowledge" class="nav__link">Knowledge</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
@@ -24,72 +24,124 @@
     </header>
 
     <main class="main">
-        <section class="entry-section">
+        <section class="entry-section" id="main">
             <div class="entry-section__box">
-                <h1>Cześć! 👋</h1>
+                <h1>Hello! 👋</h1>
                 <h3><span class="entry-section__text--highlight">I'm Artur, a product manager in FORTRUS.</span></h3>
                 <h3>In free time I learn about new front end technologies.</h3>
                 <h3>Welcome on my webpage. Make yourself at home.</h3>
                 <div class="entry-section__box--actions">
                     <a href="#" class="entry-section__button">More about me</a>
                     <div class="social__icons">
-                        <a href="#"><img class="social__icon" src="img/linkedin.svg" alt="linkedin logo"></a>
-                        <a href="#"><img class="social__icon" src="img/github.svg" alt="github logo"></a>
+                        <a href="https://linkedin.com/in/artur-pydych-b7630394/"><img class="social__icon"
+                                src="img/linkedin.svg" alt="linkedin logo"></a>
+                        <a href="https://github.com/apyd"><img class="social__icon" src="img/github.svg"
+                                alt="github logo"></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about-section" id="#about">
-            <h2>Knowledge & Experience</h2>
-            <div class="about-section__box--knowledge">
-                <h3>Knowledge</h3>
-                <img src="img/html5.svg" class="knowledge__icon" alt="html5 icon">
-                <img src="img/css3.svg" class="knowledge__icon" alt="css3 icon">
-                <img src="img/javascript.svg" class="knowledge__icon" alt="javascript icon">
-                <img src="img/jira.svg" class="knowledge__icon" alt="jira software icon">
-                <img src="img/linux.svg" class="knowledge__icon" alt="linux terminal icon">
-                <img src="img/git.svg" class="knowledge__icon" alt="git icon">
+        <section class="knowledge-section" id="knowledge">
+            <h2>Knowledge</h2>
+            <div class="knowledge-section__box">
+                <img src="img/html5.svg" class="knowledge-section__icon" alt="html5 icon">
+                <span class="knowledge-section__text">I have a knowledge about available tags, their purpose and
+                    available attributes.</span>
+                <img src="img/css3.svg" class="knowledge-section__icon" alt="css3 icon">
+                <span class="knowledge-section__text">I know how to style elements, position them and use BEM as
+                    naming convention.</span>
+                <img src="img/javascript.svg" class="knowledge-section__icon" alt="javascript icon">
+                <span class="knowledge-section__text">I have a knowledge about functions, objects, can mainpulate
+                    DOM and use event listeners</span>
+                <img src="img/jira.svg" class="knowledge-section__icon" alt="jira software icon">
+                <span class="knowledge-section__text">I use Jira Software and Jira Service Desk it on daily basis
+                    to manage my and team work.</span>
+                <img src="img/linux.svg" class="knowledge-section__icon" alt="linux terminal icon">
+                <span class="knowledge-section__text">I know how to use SSH, how to navigate on linux server, do
+                    actions on files and exit vim ;-)</span>
+                <img src="img/git.svg" class="knowledge-section__icon" alt="git icon">
+                <span class="knowledge-section__text">Basic knowledge - know how to commit, to switch between
+                    branches and do a pull request.</span>
             </div>
-            <div class="about-section__box--experience">
-                <h3>Experience</h3>
-                <p>Support team manager</p>
-                <p>Support team</p>
-                <p>Dev team coordinator</p>
-                <p>Project manager</p>
+            <h2>Experience</h2>
+            <div class="experience-wrapper">
+                <div class="experience-wrapper__content">
+                    <h4>Support team manager</h4>
+                    <div class="experience-wrapper__text-box">
+                    <p>Since three years I'm managing small support team which supply services to customers. This includes investigating issues, analyzing application log files and scheduling developers
+                        availability to prepare a hotfix release.</p>
+                    </div>
+                </div>
+                <div class="experience-wrapper__content">
+                    <h4>Support team member</h4>
+                    <div class="experience-wrapper__text-box">
+                    <p>I'm active part of support team so my responsibility is not only limited to managing but also
+                        helping team with finding root cause, with preparing simple t-sql scripts</p>
+                    </div>
+                </div>
+                <div class="experience-wrapper__content">
+                    <h4>Dev team coordinator</h4>
+                    <div class="experience-wrapper__text-box">
+                    <p> Due to my role in support team I stay in contact with developers team. Sometimes issue requires
+                        local debugging and such a situation requires analyzing current team workload, release dates.
+                    </p>
+                </div>
+                </div>
+                <div class="experience-wrapper__content">
+                    <h4>Project manager</h4>
+                    <div class="experience-wrapper__text-box">
+                    <p>Since two years I'm also a project manager for a product that team I'm a part supports. Combining
+                        two roles helps to understand wider product perspective including delivery dates, new features
+                        and hot fixes.</p>
+                </div>
             </div>
         </section>
         <section class="projects-section" id="projects">
             <h2>Projects</h2>
             <div class="projects-section__box">
                 <div class="project">
-                    <h3>Cullera Apartment</h3>
-                    <p>Website about house available to rent.
-                    Purpose of creating it was to show information about available equipment, prices and available dates to rent.
-                    Webpage was created with Artur Pydych. My main responsibility was to create designs and layouts in HTML5, CSS3.
-                    </p>
-                    <p>Technologies: HTML5, CSS3, Javascript + Fancybox</p>
-                    <a href="https://cullera-apartment.com" class="">Live</a>
-                    <a href="https://github.com/apyd/Cullera-Apartment" class="">Repository</a>
-                    <img src="" class="" alt="Cullera apartment webpage screenshot">
+                    <div class="project__box--text">
+                        <h4>Cullera Apartment</h4>
+                        <p>Website about house available to rent.
+                            The purpose of creating it was to show information about available equipment, prices and
+                            available
+                            dates to rent.
+                            Webpage was created with Michał Wajer. My main responsibility was to create designs and
+                            layouts
+                            in HTML5, CSS3.
+                        </p>
+                        <p>Technologies: HTML5, CSS3, Javascript + Fancybox</p>
+                        <a href="https://cullera-apartment.com" class="project__link">Live</a>
+                        <a href="https://github.com/apyd/Cullera-Apartment" class="project__link">Repository</a>
+                    </div>
+                    <div class="project__box--img">
+                        <img src="img/project1img.png" class="project__img" alt="Cullera apartment webpage screenshot">
+                    </div>
                 </div>
                 <div class="project">
-                    <h3>Rock paper scissors game</h3>
-                    <p>Project is still in progress on early stage. Project for own educational purposes to learn Javascript - especially events listeners, DOM manipulating, functions and objects</p>
-                    <p>Technologies: HTML5, CSS3, Javascript</p>
-                    <a href="https://apyd.github.io/Rock-Paper-Scissors-game/" class="">Live</a>
-                    <a href="https://github.com/apyd/Rock-Paper-Scissors-game" class="">Repository</a>
-                    <img src="#" class="" alt="Rock paper scissors game screenshot">
+                    <div class="project__box--text">
+                        <h4>Rock paper scissors game</h4>
+                        <p>Project is still in progress on early stage. Created for own educational purposes to learn
+                            Javascript - especially events listeners, DOM manipulating, functions and objects.</p>
+                        <p>Technologies: HTML5, CSS3, Javascript</p>
+                        <a href="https://apyd.github.io/Rock-Paper-Scissors-game/" class="project__link">Live</a>
+                        <a href="https://github.com/apyd/Rock-Paper-Scissors-game" class="project__link">Repository</a>
+                    </div>
+                    <div class="project__box--img">
+                        <img src="img/project2img.jpg" class="project__img" alt="Rock paper scissors game screenshot">
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="contact-section" id="contact">
             <h2>Contact</h2>
             <div class="container">
                 <form id="contact" action="" method="post">
-                    <label><input placeholder="Your name" type="text" name="first_name" required/></label>
+                    <label><input placeholder="Your name" type="text" name="first_name" required /></label>
                     <label><input placeholder="Your email" type="email" name="email" required></label>
                     <label><textarea placeholder="Type your message here..." tabindex="5" required></textarea></label>
-                    <input type="submit" value="submit"/>
+                    <input type="submit" value="submit" />
                 </form>
             </div>
         </section>
