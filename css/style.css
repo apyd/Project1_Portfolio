@@ -311,4 +311,8 @@
     .contact__wrapper {
         width: 100%;
     }
+    
+    .projects-section {
+        height: 100%;
+    }
 }
