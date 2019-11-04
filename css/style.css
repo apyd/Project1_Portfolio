@@ -202,6 +202,7 @@
 .project__img {
     width: 100%;
     border: 1px solid var(--black-color);
+    box-sizing: border-box;
 }
 
 .contact__wrapper {
@@ -245,7 +246,30 @@
     .knowledge-section__icon {
         margin: 80px 20px 0 20px;
     }
- }
+
+    .main {
+        margin: 0 20px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project__box--text {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .project__box--links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__link {
+        margin: 10px;
+    }
+
+}
 
 @media (max-width: 768px) { 
     .entry-section, .knowledge-section, .projects-section, .contact-section {
