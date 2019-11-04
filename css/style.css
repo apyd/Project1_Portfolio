@@ -21,6 +21,8 @@
     box-sizing: padding-box;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -114,7 +116,6 @@
 }
 
 .knowledge-section {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,6 +132,8 @@
 .knowledge-section__box {
     position: relative;
     margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .knowledge-section__text{
@@ -243,5 +246,21 @@
 @media (max-width: 768px) { 
     .entry-section, .knowledge-section, .projects-section, .contact-section {
         height: 100%;
+    }
+}
+
+
+@media (max-width: 976px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav__items {
+        padding-inline-start: 0;
     }
 }
