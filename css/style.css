@@ -32,9 +32,8 @@
 }
 
 .header {
-    max-width: 1600px;
     display: flex;
-    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .nav {
@@ -252,7 +251,7 @@
 
 @media (max-width: 976px) {
     .nav {
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex: 0;
@@ -262,5 +261,6 @@
 
     .nav__items {
         padding-inline-start: 0;
+        flex: 0;
     }
 }
