@@ -232,7 +232,24 @@
     color: var(--black-color);
 }
 
+@media (min-width: 576px){
 
+    .entry-section, .knowledge-section, .projects-section, .contact-section {
+        height: 100%;
+    }
+
+ }
+
+@media (min-width: 768px) { 
+    .entry-section, .knowledge-section, .projects-section, .contact-section {
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 
 
 
