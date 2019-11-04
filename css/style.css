@@ -247,6 +247,10 @@
         margin: 0 20px;
     }
 
+}
+
+@media (max-width: 768px) {
+
     .projects-section, .contact-section {
         margin: 0;
     }
@@ -269,9 +273,6 @@
         margin: 10px;
     }
 
-}
-
-@media (max-width: 768px) { 
     .entry-section, .knowledge-section, .projects-section, .contact-section {
         height: 100%;
     }
