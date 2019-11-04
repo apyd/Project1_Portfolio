@@ -246,7 +246,6 @@
     .main {
         margin: 0 20px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -306,5 +305,10 @@
 
     .contact-section {
         margin: 40px 0;
+        width: 100%;
+    }
+
+    .contact__wrapper {
+        width: 100%;
     }
 }
