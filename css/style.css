@@ -251,10 +251,6 @@
         margin: 0;
     }
 
-    .contact-section {
-        margin: 40px;
-    }
-
     .project {
         flex-direction: column;
     }
@@ -305,5 +301,9 @@
     .experience-wrapper__text-box {
         width: 100%;
         padding: 20px
+    }
+
+    .contact-section {
+        margin: 40px 0;
     }
 }
