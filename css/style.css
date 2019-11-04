@@ -119,7 +119,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .knowledge-section__icon {
@@ -129,10 +128,11 @@
 }
 
 .knowledge-section__box {
-    position: relative;
     margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .knowledge-section__text{
