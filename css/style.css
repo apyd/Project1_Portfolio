@@ -247,12 +247,12 @@
         margin: 0 20px;
     }
 
+}
+
+@media (max-width: 768px) {
+
     .projects-section, .contact-section {
         margin: 0;
-    }
-
-    .contact-section {
-        margin: 40px;
     }
 
     .project {
@@ -273,9 +273,6 @@
         margin: 10px;
     }
 
-}
-
-@media (max-width: 768px) { 
     .entry-section, .knowledge-section, .projects-section, .contact-section {
         height: 100%;
     }
@@ -305,5 +302,9 @@
     .experience-wrapper__text-box {
         width: 100%;
         padding: 20px
+    }
+
+    .contact-section {
+        margin: 40px 0;
     }
 }
